@@ -156,6 +156,7 @@ a {
   justify-content: center;
   overflow: hidden;
   z-index: 9999;
+  width: 100vw;
   animation: overlayFade 1s ease forwards;
   animation-delay: 2.6s;
 }
@@ -549,6 +550,7 @@ a {
   animation: codeFlow 10s linear infinite;
   animation-play-state: paused;
   will-change: transform;
+  width: 90vw;
 }
 
 .code-stream span {
@@ -1012,6 +1014,7 @@ a {
   z-index: 999;
   padding: 40px 20px;
   overflow-y: auto;
+  width: 100vw;
 }
 
 .work-modal.active {
