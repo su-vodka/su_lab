@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SU Lab Portfolio | IT転職挑戦中</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/icon/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="intro-overlay" aria-hidden="true">
+      <div class="door door-left"></div>
+      <div class="door door-right"></div>
+      <div class="keyhole"></div>
+      <div class="key-piece piece-left"></div>
+      <div class="key-piece piece-right"></div>
+      <p class="intro-text">Hello world !</p>
+    </div>
+
+    <div class="site-content">
+      <nav class="main-nav">
+        <div class="logo">
+          <a href="#hero" aria-label="Heroセクションへ移動">
+            <img src="images/icon/logo.svg" alt="SU Lab ロゴ" />
+          </a>
+        </div>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#learning">Learning</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <header class="hero section" id="hero">
+        <div class="hero-text" data-animate="left">
+          <p class="eyebrow">建設業出身 × IT転職挑戦中</p>
+          <h1>SU Lab</h1>
+          <p class="catch-copy">“新しいキャリアの扉を開く”</p>
+          <p class="hero-description">
+            職業訓練校でWeb開発と業務効率化を学習中です。<br>ここに制作物や身につけたスキルをまとめています。<br><br>当サイトはCODEXを活用して制作しました。
+          </p>
+          <a class="cta" href="#contact">お問い合わせはこちら</a>
+        </div>
+        <div class="hero-visual" data-animate="right">
+          <div class="hero-orb-shell">
+            <div class="hero-orb" role="button" tabindex="0" aria-label="オーブ">
+              <div class="orb-surface" aria-hidden="true"></div>
+              <div class="orb-core"></div>
+              <div class="orb-halo"></div>
+              <div class="orb-glow"></div>
+              <div class="orb-flash" aria-hidden="true"></div>
+              <div class="orb-rings" aria-hidden="true">
+                <span class="orb-ring"></span>
+                <span class="orb-ring"></span>
+                <span class="orb-ring"></span>
+              </div>
+              <canvas class="orb-particles" aria-hidden="true"></canvas>
+              <div class="orb-code" aria-hidden="true">
+                <div class="code-stream">
+                <span>const pulse = (state) => state * 1.03;</span>
+                <span>const aiCore = () => queueMicrotask(pulse);</span>
+                <span>let entropy = crypto.getRandomValues(new Uint32Array(1))[0];</span>
+                <span>const stream = Array.from({ length: 64 }, (_, i) => i ** 2);</span>
+                <span>function ignite(signal) { return signal.map(Math.tanh); }</span>
+                <span>const heart = () => ({ tick: Date.now(), entropy });</span>
+                <span>requestAnimationFrame(() => ignite(stream));</span>
+                <span>const sync = () => (heart().tick % 3 ? "spark" : "calm");</span>
+                <span>const weave = (input) => input.reduce((a, b) => a + b, 0);</span>
+                <span>export const core = { pulse, ignite, sync, weave };</span>
+                <span>// --- core mirror ---</span>
+                <span>const pulse = (state) => state * 1.03;</span>
+                <span>const aiCore = () => queueMicrotask(pulse);</span>
+                <span>let entropy = crypto.getRandomValues(new Uint32Array(1))[0];</span>
+                <span>const stream = Array.from({ length: 64 }, (_, i) => i ** 2);</span>
+                <span>function ignite(signal) { return signal.map(Math.tanh); }</span>
+                <span>const heart = () => ({ tick: Date.now(), entropy });</span>
+                <span>requestAnimationFrame(() => ignite(stream));</span>
+                <span>const sync = () => (heart().tick % 3 ? "spark" : "calm");</span>
+                <span>const weave = (input) => input.reduce((a, b) => a + b, 0);</span>
+                <span>export const core = { pulse, ignite, sync, weave };</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="about" class="section about">
+        <div class="section-header">
+          <h2 data-animate="left">About</h2>
+        </div>
+        <div class="about-content" data-animate="left">
+          <p>
+            10年以上にわたり建設業界で安全と品質を守りながら現場をリードしてきました。<br>
+            現在は職業訓練校でWeb開発・業務自動化を学習し、未経験からIT業界への転職に挑戦しています。
+          </p>
+          <div class="about-panels">
+            <div class="timeline">
+              <h3>経歴</h3>
+              <ul>
+                <li><span>2010年～<br>2013年</span> <b>商業科定時制高校</b>に通いながら<b>アルバイト</b>を行い、学業と仕事を両立。<br>中古車情報サイトへの掲載・サーバーの管理を経験。</li>
+                <li><span>2013年～<br>2025年</span> <b>建設会社</b>にて造船・プラントの現場作業に従事。<br>2022年から工事係長として現場を指揮。</li>
+                <li><span>2025年6月</span> <strong>IT業界への転職</strong>を決意して<b>退職</b>、独学で学習を開始。</li>
+                <li><span>2025年8月～</span> <strong>オンライン職業訓練校</strong>でWeb制作・業務効率化を実践中。2026年2月修了予定。</li>
+                <Li><span>2025年11月～</span> <b>佐世保市デジタル人材育成講座</b>（ノーコード・ローコード講座）を受講中。2026年1月修了予定。</Li>
+              </ul>
+            </div>
+            <div class="quick-facts">
+              <h3>基本情報</h3>
+              <ul>
+                <li>
+                  <span class="fact-label">出身</span>
+                  <span class="fact-value">長崎県佐世保市</span>
+                </li>
+                <li>
+                  <span class="fact-label">趣味</span>
+                  <span class="fact-value">モンスターハンターワイルズ・ツーリング</span>
+                </li>
+                <li>
+                  <span class="fact-label">特技</span>
+                  <span class="fact-value">車とバイクのメンテナンス・バランスボール</span>
+                </li>
+                <li>
+                  <span class="fact-label">関心</span>
+                  <span class="fact-value">ノーコード自動化・AI活用</span>
+                </li>
+                <li>
+                  <span class="fact-label">強み</span>
+                  <span class="fact-value">建設現場で培ったチームワークと問題解決力</span>
+                </li>
+                <li>
+                  <span class="fact-label">X 　</span>
+                  <span class="fact-value">
+                    <a href="https://x.com/vodka_iteng/" target="_blank" rel="noopener noreferrer">x.com/vodka_iteng/</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fact-label">GitHub</span>
+                  <span class="fact-value">
+                    <a href="https://github.com/su-vodka/" target="_blank" rel="noopener noreferrer">github.com/su-vodka/</a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="learning" class="section learning">
+        <div class="section-header">
+          <h2 data-animate="left">学習中の内容</h2>
+          <p data-animate="right">多角的に学び、実務で活かせる力を蓄積</p>
+        </div>
+        <div class="learning-grid">
+          <article class="learning-card" data-animate="left">
+            <span class="learning-icon">
+              <img src="images/icon/html.svg" alt="HTML5ロゴ" />
+            </span>
+            <h3>HTML</h3>
+          </article>
+          <article class="learning-card" data-animate="right">
+            <span class="learning-icon">
+              <img src="images/icon/css.svg" alt="CSS3ロゴ" />
+            </span>
+            <h3>CSS</h3>
+          </article>
+          <article class="learning-card" data-animate="left">
+            <span class="learning-icon">
+              <img src="images/icon/javascript.svg" alt="JavaScriptロゴ" />
+            </span>
+            <h3>JavaScript</h3>
+          </article>
+          <article class="learning-card" data-animate="right">
+            <span class="learning-icon">
+              <img src="images/icon/java.svg" alt="Javaロゴ" />
+            </span>
+            <h3>Java</h3>
+          </article>
+          <article class="learning-card" data-animate="left">
+            <span class="learning-icon">
+              <img src="images/icon/php.svg" alt="PHPロゴ" />
+            </span>
+            <h3>PHP</h3>
+          </article>
+          <article class="learning-card" data-animate="right">
+            <span class="learning-icon">
+              <img src="images/icon/excel-vba.svg" alt="Microsoft Excelロゴ" />
+            </span>
+            <h3>Excel VBA</h3>
+          </article>
+          <article class="learning-card" data-animate="left">
+            <span class="learning-icon">
+              <img src="images/icon/google-apps-script.svg" alt="Google Apps Scriptロゴ" />
+            </span>
+            <h3>Google Apps Script</h3>
+          </article>
+          <article class="learning-card" data-animate="right">
+            <span class="learning-icon">
+              <img src="images/icon/linux.svg" alt="Linuxロゴ" />
+            </span>
+            <h3>Linux</h3>
+          </article>
+          <article class="learning-card" data-animate="left">
+            <span class="learning-icon">
+              <img src="images/icon/windows-power-automate.svg" alt="Power Automate Desktopロゴ" />
+            </span>
+            <h3>Power Automate Desktop</h3>
+          </article>
+          <article class="learning-card" data-animate="left">
+            <span class="learning-icon">
+              <img src="images/icon/placeholder.svg" alt="" aria-hidden="true" />
+            </span>
+            <h3>kintone</h3>
+          </article>
+        </div>
+      </section>
+
+      <section id="certifications" class="section certifications">
+        <div class="section-header">
+          <h2 data-animate="left">Certifications</h2>
+          <p data-animate="right">IT系資格と建設業で培った多彩なライセンス</p>
+        </div>
+        <div class="cert-card-grid">
+          <article class="cert-card" data-animate="left">
+            <h3>2025.8<br>ITパスポート</h3>
+          </article>
+          <article class="cert-card" data-animate="right">
+            <h3>2025.9<br>基本情報技術者試験</h3>
+          </article>
+          <article class="cert-card spacer" aria-hidden="true"></article>
+        </div>
+        <div class="other-cert-grid">
+          <span class="mini-cert" data-animate="right">2級 土木施工管理技士</span>
+          <span class="mini-cert" data-animate="left">2級 建設機械施工管理技士(第2種)</span>
+          <span class="mini-cert" data-animate="right">下水道排水設備工事責任技術者</span>
+          <span class="mini-cert" data-animate="left">給水装置工事主任技術者</span>
+          <span class="mini-cert" data-animate="right">特化物及び四アルキル鉛等作業主任者</span>
+          <span class="mini-cert" data-animate="left">高所作業車運転技能講習</span>
+          <span class="mini-cert" data-animate="right">足場の組立て等作業主任者技能講習</span>
+          <span class="mini-cert" data-animate="left">フォークリフト運転技能講習</span>
+          <span class="mini-cert" data-animate="right">小型移動式クレーン運転技能講習</span>
+          <span class="mini-cert" data-animate="left">床上操作式クレーン運転技能講習</span>
+          <span class="mini-cert" data-animate="right">ガス溶接技能講習</span>
+          <span class="mini-cert" data-animate="left">玉掛け技能講習</span>
+          <span class="mini-cert" data-animate="right">有機溶剤業務従事者教育</span>
+          <span class="mini-cert" data-animate="left">職長・安全衛生責任者教育</span>
+          <span class="mini-cert" data-animate="right">酸欠危険作業(2種) 特別教育</span>
+          <span class="mini-cert" data-animate="left">研削といしの取替業務 特別教育</span>
+          <span class="mini-cert" data-animate="right">アーク溶接等の業務 特別教育</span>
+          <span class="mini-cert" data-animate="left">フルハーネス型安全帯使用作業 特別教育</span>
+          <span class="mini-cert" data-animate="right">全商 パソコン入力スピード認定試験1級</span>
+          <span class="mini-cert" data-animate="left">全商 ワープロ実務検定試験1級</span>
+          <span class="mini-cert" data-animate="right">全商 情報処理検定試験3級</span>
+          <span class="mini-cert" data-animate="left">全商 簿記実務検定試験2級</span>
+          <span class="mini-cert" data-animate="right">電卓検定試験2級</span>
+          <span class="mini-cert" data-animate="left">準中型自動車第一種運転免許（5t限定）</span>
+          <span class="mini-cert" data-animate="right">大型自動二輪車免許</span>
+        </div>
+      </section>
+
+      <section id="works" class="section works">
+        <div class="section-header">
+          <h2 data-animate="left">Works</h2>
+          <p data-animate="right">制作物をクリックすると詳細が開きます</p>
+        </div>
+        <div class="works-group">
+          <h3 data-animate="left">訓練校での課題制作物</h3>
+          <div class="works-grid auto-scroll">
+            <article class="work-card" data-modal="work1" data-animate="right">
+              <img src="images/works/school_thumbnails/vba-salesdata.png" alt="VBA売上データ分析システム" />
+              <div class="work-body">
+                <h3>【VBA】売上データ分析システム</h3>
+                <p>大量の売上データをVBAで自動検証し、集計からレポート出力まで自動化する分析システム。</p>
+              </div>
+            </article>
+            <article class="work-card" data-modal="work2" data-animate="right">
+              <img src="images/works/school_thumbnails/vba-invoice.png" alt="VBA請求書・管理システム" />
+              <div class="work-body">
+                <h3>【VBA】請求書・管理システム</h3>
+                <p>請求書入力フォームから明細を登録し、請求書作成と管理を一気通貫で効率化するVBAシステム。</p>
+              </div>
+            </article>
+            <article class="work-card" data-modal="work3" data-animate="right">
+              <img src="images/works/school_thumbnails/vba-sheet.png" alt="VBAシート作成の自動化" />
+              <div class="work-body">
+                <h3>【VBA】シート作成の自動化</h3>
+                <p>テンプレートに基づいて必要なシートを一括生成し、作業時間と手戻りを削減する自動生成ツール。</p>
+              </div>
+            </article>
+            <article class="work-card" data-modal="work4" data-animate="right">
+              <img src="images/works/school_thumbnails/questionnaire.png" alt="VBAアンケート集計・分析の自動化" />
+              <div class="work-body">
+                <h3>【VBA】アンケート集計・分析の自動化</h3>
+                <p>複数ファイルのアンケートを一括取込し、集計・分析を完全自動化して業務効率を高めたシステム。</p>
+              </div>
+            </article>
+          </div>
+          <div class="slider-dots" aria-hidden="true"></div>
+        </div>
+        <div class="works-group">
+          <h3 data-animate="right">AI駆動プロジェクト（内容はサンプルデータです。今後アップしていきます）</h3>
+          <div class="works-grid ai auto-scroll">
+            <article class="work-card ai-card" data-modal="work11" data-animate="right">
+              <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=800&q=80" alt="AIレジュメ生成ツール" />
+              <div class="work-body">
+                <h3>AI Resume Tailor</h3>
+                <p>職務経歴書を求人ごとに自動最適化する生成AIツール。</p>
+              </div>
+            </article>
+            <article class="work-card ai-card" data-modal="work12" data-animate="right">
+              <img src="https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?auto=format&fit=crop&w=800&q=80" alt="設備保全AI" />
+              <div class="work-body">
+                <h3>Predictive Maintenance Bot</h3>
+                <p>過去データから設備異常を予測し、Slackに自動通知。</p>
+              </div>
+            </article>
+          </div>
+          <div class="slider-dots" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-header">
+          <h2 data-animate="left">Contact</h2>
+          <p data-animate="right">Formspreeでメールが送信されます。<br>48時間以内に返信がない場合はSNS等からご連絡下さい。</p>
+        </div>
+        <div class="contact-wrapper">
+          <form id="contactForm" action="https://formspree.io/f/xpwkaqnv" method="POST" data-animate="left">
+            <label>
+              お名前<span class="required-badge">必須</span>
+              <input type="text" name="name" placeholder="例：山田 太郎" required />
+            </label>
+            <label>
+              メールアドレス<span class="required-badge">必須</span>
+              <input type="email" name="email" placeholder="example@mail.com" required />
+            </label>
+            <label>
+              メッセージ<span class="required-badge">必須</span>
+              <textarea name="message" rows="5" placeholder="お問い合わせ内容を入力してください" required></textarea>
+            </label>
+            <button type="submit" class="cta">送信する</button>
+          </form>
+          <div id="thankYouMessage" class="thank-you" aria-live="polite" data-animate="right">
+            <p>お問い合わせを受け付けました。</p>
+            <p>48時間以内にご連絡いたします。ありがとうございます！</p>
+          </div>
+        </div>
+        <div class="social-links" data-animate="right">
+          <a href="https://github.com/su-vodka/" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8.2 11.2.6.1.8-.3.8-.6v-2c-3.4.8-4.1-1.7-4.1-1.7-.5-1.4-1.3-1.8-1.3-1.8-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 2.3 2.8 1.7.1-.8.4-1.3.8-1.7-2.8-.3-5.7-1.4-5.7-6.1 0-1.3.5-2.3 1.1-3.2-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3 1.1a10 10 0 0 1 5.5 0c2.1-1.4 3-1.1 3-1.1.6 1.6.2 2.8.1 3.1.7.9 1.1 1.9 1.1 3.2 0 4.7-2.9 5.8-5.7 6.1.5.4.9 1.2.9 2.5v3.7c0 .3.2.7.8.6a11.8 11.8 0 0 0 8.2-11.2A11.5 11.5 0 0 0 12 .5Z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://x.com/vodka_iteng/" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M17.5 2h3.2l-7 8 8.3 12h-6.5L11.8 14l-6.1 8H2.5l7.5-8.8L2.1 2h6.6l4.3 6.4L17.5 2Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div class="work-modal" id="work1" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="閉じる">&times;</button>
+        <img src="images/works/school/vba-salesdata.png" alt="VBA売上データ分析システム" />
+        <h3>【VBA】売上データ分析システム</h3>
+        <p>
+          大量の売上データに対して、VBAを用いて自動でバリデーション・分析レポートを生成するシステムを開発。
+          データの集計、グラフ作成、レポート出力までを自動化し、業務効率の向上に貢献できるシステムです。
+        </p>
+      </div>
+    </div>
+
+    <div class="work-modal" id="work2" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="閉じる">&times;</button>
+        <img src="images/works/school/vba-invoice.png" alt="VBA請求書・管理システム" />
+        <h3>【VBA】請求書・管理システム</h3>
+        <p>
+          請求書入力フォームから明細データを登録し、そのまま自動で請求書を生成するVBAシステムです。
+          検索・編集機能まで実装し、請求書管理の一元化と入力工数の削減を実現しています。
+        </p>
+      </div>
+    </div>
+
+    <div class="work-modal" id="work3" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="閉じる">&times;</button>
+        <img src="images/works/school/vba-sheet.png" alt="VBAシート作成の自動化" />
+        <h3>【VBA】シート作成の自動化</h3>
+        <p>
+          必要な帳票をテンプレートから自動生成し、複数シートを一括で作成するツール。
+          手動作業の削減と作成ミス防止を目的に、必要項目の差し込みや命名も自動化しました。
+        </p>
+      </div>
+    </div>
+
+    <div class="work-modal" id="work4" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="閉じる">&times;</button>
+        <img src="images/works/school/questionnaire.png" alt="VBAアンケート集計・分析の自動化" />
+        <h3>【VBA】アンケート集計・分析の自動化</h3>
+        <p>
+          複数のアンケートファイル（Excel）を一括取り込み、集計・分析を自動化するシステムです。
+          部署別や設問別のクロス集計、グラフレポート出力までを自動で行い、分析時間を大幅に短縮しました。
+        </p>
+      </div>
+    </div>
+
+    <div class="work-modal" id="work11" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="閉じる">&times;</button>
+        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=1200&q=80" alt="AIレジュメ生成ツール詳細" />
+        <h3>AI Resume Tailor</h3>
+        <p>
+          OpenAI APIを用いて求人票を解析し、応募者のスキルを自動で言語化。GitHub Actionsでモデルプロンプトをバージョン管理しています。
+        </p>
+      </div>
+    </div>
+
+    <div class="work-modal" id="work12" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="閉じる">&times;</button>
+        <img src="https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?auto=format&fit=crop&w=1200&q=80" alt="設備保全AI詳細" />
+        <h3>Predictive Maintenance Bot</h3>
+        <p>
+          Azure Machine Learningで構築した推論モデルをWebアプリに組み込み、異常スコアが閾値を超えるとSlackに自動連絡する仕組みを開発しました。
+        </p>
+      </div>
+    </div>
+
+    <footer class="section footer">
+      <p>
+        Icons:
+        <a href="https://iconscout.com/icons/html" class="text-underline font-size-sm" target="_blank" rel="noopener"
+          >HTML</a>
+        by
+        <a href="https://iconscout.com/jp/contributors/jagathish/" class="text-underline font-size-sm" target="_blank" rel="noopener"
+          >Jagathish Saravanan</a>
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+
+<a href="https://iconscout.com/icons/bicycle" class="text-underline font-size-sm" target="_blank">Bicycle</a> by <a href="https://iconscout.com/kr/contributors/jagathish/:assets" class="text-underline font-size-sm" target="_blank">Jagathish Saravanan</a>
+
+
+
+
+
