@@ -833,7 +833,7 @@ a {
   box-shadow: var(--shadow);
   border: 1px solid rgba(16, 128, 207, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-height: 150px;
+  min-height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -988,6 +988,7 @@ a {
   text-align: center;
   font-size: 0.9rem;
   color: var(--muted);
+  padding: 0px 6vw;
 }
 
 .footer a {
@@ -1132,9 +1133,10 @@ textarea:focus {
 }
 
 .social-links {
-  margin-top: 32px;
+  margin: 32px auto 0 auto;
   display: flex;
   gap: 20px;
+  max-width: 650px;
 }
 
 .social-links a {
@@ -1298,6 +1300,7 @@ textarea:focus {
   .cert-card-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
+    margin-bottom: 24px;
   }
 
   .cert-card {
@@ -1306,10 +1309,14 @@ textarea:focus {
     font-size: 0.70rem;
   }
 
+  .cert-card h3 {
+    margin: 0;
+  }
+
   .mini-cert {
     padding: 8px 10px;
     border-radius: 10px;
-    min-height: 50px;
+    min-height: 46px;
     font-size: 0.55rem;
   }
 
