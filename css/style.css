@@ -60,7 +60,6 @@ a {
 
 .section {
   padding: 50px 6vw;
-  overflow-x: hidden;
 }
 
 .section-header {
@@ -1225,9 +1224,10 @@ textarea:focus {
     height: 280px;
   }
 
-  /* .contact-wrapper {
-    width: 90%;
-  } */
+  [data-animate="left"],
+  [data-animate="right"] {
+    transform: translateX( -20px );
+  }
 }
 
 @media (max-width: 640px) {
