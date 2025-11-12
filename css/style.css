@@ -60,6 +60,7 @@ a {
 
 .section {
   padding: 50px 6vw;
+  overflow-x: hidden;
 }
 
 .section-header {
@@ -136,7 +137,7 @@ a {
 .main-nav a {
   font-weight: 600;
   color: var(--accent);
-  padding: 15px;
+  padding: 13px 14px 12px 14px;
   transition: color 0.3s ease;
 }
 
@@ -1183,9 +1184,28 @@ textarea:focus {
 /* ---------------------------------------------
    レスポンシブ対応
 --------------------------------------------- */
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .section {
     padding: 20px 5vw;
+  }
+
+  .main-nav {
+    padding: 0px 2vw;
+  }
+
+  .main-nav a {
+  padding: 9px 14px 8px 14px;
+  }
+
+  .main-nav .logo img {
+    width: 40px;
+    height: 40px;
+    padding: 4px 0px;
+  }
+
+  .main-nav .logo a {
+    width: 40px;
+    height: 40px;
   }
 
   .hero {
@@ -1215,7 +1235,6 @@ textarea:focus {
     flex-direction: row;
     align-items: center;
     gap: 4px;
-    padding: 6px 2vw;
     flex-wrap: nowrap;
   }
 
