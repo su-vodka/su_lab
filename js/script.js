@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let paused = false;
     let running = false;
     let resumeTimeoutId = null;
-    const speed = 0.6; // px/frame
+    const speed = 1; // px/frame
 
     const maxScroll = () => container.scrollWidth - container.clientWidth;
     const dotsWrapper = container.nextElementSibling;
