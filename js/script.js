@@ -376,6 +376,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     container.addEventListener("mouseenter", pauseNow);
     container.addEventListener("mouseleave", () => resumeAfter());
+    container.addEventListener("touchstart", pauseNow, { passive: true });
+    const handleTouchEnd = () => resumeAfter();
+    container.addEventListener("touchend", handleTouchEnd);
+    container.addEventListener("touchcancel", handleTouchEnd);
     container.addEventListener("scroll", updateDots, { passive: true });
 
     let isDragging = false;
