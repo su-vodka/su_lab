@@ -158,7 +158,7 @@ a {
   z-index: 9999;
   width: 100vw;
   animation: overlayFade 1s ease forwards;
-  animation-delay: 2.6s;
+  animation-delay: 2.2s;
 }
 
 .intro-overlay::after {
@@ -235,7 +235,7 @@ a {
   text-transform: uppercase;
   z-index: 4;
   opacity: 0;
-  animation: textReveal 1s ease forwards;
+  animation: textReveal 0.8s ease forwards;
   animation-delay: 1.3s;
 }
 
@@ -311,7 +311,7 @@ a {
 .site-content {
   opacity: 0;
   animation: contentShow 1.2s ease forwards;
-  animation-delay: 2.6s;
+  animation-delay: 2.2s;
 }
 
 @keyframes contentShow {
