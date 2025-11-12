@@ -337,7 +337,7 @@ document.addEventListener("DOMContentLoaded", () => {
       clearResumeTimeout();
     };
 
-    const resumeAfter = (delay = 1200) => {
+    const resumeAfter = (delay = 2500) => {
       clearResumeTimeout();
       resumeTimeoutId = setTimeout(() => {
         paused = false;
@@ -354,11 +354,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (next <= 0) {
           direction = 1;
           pauseNow();
-          resumeAfter(2000);
+          resumeAfter(3000);
         } else if (next >= limit) {
           direction = -1;
           pauseNow();
-          resumeAfter(2000);
+          resumeAfter(3000);
         }
       }
       requestAnimationFrame(loop);
