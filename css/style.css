@@ -59,7 +59,7 @@ a {
 }
 
 .section {
-  padding: 50px 6vw;
+  padding: 80px 6vw 20px 6vw;
 }
 
 .section-header {
@@ -1187,7 +1187,7 @@ textarea:focus {
 --------------------------------------------- */
 @media (max-width: 960px) {
   .section {
-    padding: 20px 5vw;
+    padding: 40px 20px 20px 20px;
   }
 
   .main-nav {
