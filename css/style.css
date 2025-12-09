@@ -959,7 +959,7 @@ a {
   flex-direction: column;
   flex: 0 0 calc((100% - 224px) / 5.5);
   max-width: none;
-  height: 320px;
+  height: 360px;
   max-height: 400px;
   overflow: hidden;
 }
@@ -971,7 +971,6 @@ a {
 
 .work-card img {
   width: 100%;
-  height: 55%;
   object-fit: cover;
   border-radius: calc(var(--radius) - 8px) calc(var(--radius) - 8px) 0 0;
 }
