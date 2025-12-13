@@ -144,6 +144,84 @@ a {
   color: var(--primary);
 }
 
+.nav-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .main-nav {
+    padding: 12px 5vw;
+  }
+
+  .main-nav ul {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 1001;
+  }
+
+  .menu-btn .bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--accent);
+    margin: 1px 0;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+  }
+
+  .nav-toggle:checked + .menu-btn .bar:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+  }
+
+  .nav-toggle:checked + .menu-btn .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle:checked + .menu-btn .bar:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+
+  .nav-toggle:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: fixed;
+    top: calc(12px + 60px);
+    right: 5vw;
+    width: min(170px, 80vw);
+    padding: 14px;
+    border-radius: 14px;
+    background: var(--card);
+    box-shadow: 0 14px 40px rgba(16, 128, 207, 0.16);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+  }
+
+  .main-nav ul li a {
+    display: block;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
+
 /* ---------------------------------------------
    オープニングアニメーション
 --------------------------------------------- */
