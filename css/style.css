@@ -176,6 +176,7 @@ a {
     cursor: pointer;
     border-radius: 10px;
     z-index: 1001;
+    gap: 6px;
   }
 
   .menu-btn .bar {
@@ -183,12 +184,12 @@ a {
     width: 24px;
     height: 2px;
     background: var(--accent);
-    margin: 1px 0;
+    margin: 0;
     transition: transform 0.25s ease, opacity 0.2s ease;
   }
 
   .nav-toggle:checked + .menu-btn .bar:nth-child(1) {
-    transform: translateY(12px) rotate(45deg);
+    transform: translateY(8px) rotate(135deg);
   }
 
   .nav-toggle:checked + .menu-btn .bar:nth-child(2) {
@@ -196,7 +197,7 @@ a {
   }
 
   .nav-toggle:checked + .menu-btn .bar:nth-child(3) {
-    transform: translateY(-12px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-135deg);
   }
 
   .nav-toggle:checked ~ ul {
