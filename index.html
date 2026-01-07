@@ -300,7 +300,7 @@
           <p data-animate="right">制作物をクリックすると詳細が開きます</p>
         </div>
         <div class="works-group">
-          <h3 data-animate="left">訓練校での課題制作物（追加していきます）</h3>
+          <h3 data-animate="left">訓練校での課題制作物</h3>
           <div class="works-grid auto-scroll">
             <article class="work-card" data-modal="work1" data-animate="right">
               <img src="images/works/school_thumbnails/vba-salesdata.png" alt="VBA売上データ分析システム" />
@@ -328,6 +328,27 @@
               <div class="work-body">
                 <h3>【VBA】アンケート集計・分析の自動化</h3>
                 <p>複数のアンケートファイル（Excel）を一括取り込み、集計・分析を行います。</p>
+              </div>
+            </article>
+            <article class="work-card" data-modal="work5" data-animate="right">
+              <img src="images/works/school/gas-weather.png" alt="GASで構築した天気データ自動収集・通知システム" />
+              <div class="work-body">
+                <h3>【GAS】天気データ自動収集・通知システム</h3>
+                <p>気象庁APIで最新予報を取得し、降水確率や警報条件で即時アラートを飛ばすリスク対策ツールです。</p>
+              </div>
+            </article>
+            <article class="work-card" data-modal="work6" data-animate="right">
+              <img src="images/works/school/gas-test.png" alt="GASで構築したテスト作成・採点・集計自動化システム" />
+              <div class="work-body">
+                <h3>【GAS】テスト作成・採点・集計自動化システム</h3>
+                <p>問題バンクからフォーム生成、リアルタイム採点、個別通知、統計レポートまでを一気通貫で自動化します。</p>
+              </div>
+            </article>
+            <article class="work-card" data-modal="work7" data-animate="right">
+              <img src="images/works/school/gas-sales.png" alt="GASで構築した売上集計・PDFレポート自動配信システム" />
+              <div class="work-body">
+                <h3>【GAS】売上集計・PDFレポート自動配信システム</h3>
+                <p>スプレッドシート集計からPDF生成・ドライブ保存・メール配信までをスケジュール実行し、月次報告を無人化。</p>
               </div>
             </article>
           </div>
@@ -477,6 +498,129 @@
           複数のアンケートファイル（Excel）を一括取り込み、集計・分析を行います。
           部署別や設問別のクロス集計、グラフレポート出力までを自動で行い、分析時間を大幅に短縮しました。
         </p>
+      </div>
+    </div>
+
+    <div class="work-modal" id="work5" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="閉じる">&times;</button>
+        <img src="images/works/school/gas-weather.png" alt="GASで構築した天気データ自動収集・通知システム" />
+        <h3>【GAS】天気データ自動収集・通知システム</h3>
+        <p><strong>1. 現状の課題</strong></p>
+        <p>
+          ★毎日の気象情報の確認や、天候に伴う判断業務において、以下のような課題が発生していませんか？
+        </p>
+        <ul>
+          <li><strong>手動収集の限界：</strong> 毎日決まった時間に気象庁のサイトを確認し、Excel等に転記する作業が負担になり、情報の更新漏れが発生している。</li>
+          <li><strong>判断の遅れ：</strong> 急な悪天候（大雨・強風等）の予報に気付くのが遅れ、屋外作業の中止判断や資材の養生などの対応が後手に回ってしまう。</li>
+          <li><strong>データの未活用：</strong> 過去の天気と売上・来客数の相関を調べたくても、蓄積されたデータがないため正確な分析ができない。</li>
+        </ul>
+        <p><strong>2. 業務効率化へのフロー</strong><br>Google Apps Script（GAS）を活用し、外部APIとの連携により「収集・判定・通知」を完全自動化します。</p>
+        <ul>
+          <li>
+            <strong>気象庁APIからの自動データ取得</strong><br>URLFetchServiceを用い、東京など指定エリアの最新予報データをリアルタイムで取得。JSON形式の膨大な情報から必要な項目のみを抽出。
+          </li>
+          <li>
+            <strong>条件判定・アラート通知</strong><br>取得したデータをプログラムが解析。「降水確率60%以上」や「警報発令」などの条件に合致した場合、即座にメールやチャットへ自動通知。
+          </li>
+          <li>
+            <strong>ダッシュボードへの自動記録</strong><br>取得データはGoogleスプレッドシートへ自動蓄積。条件付き書式を用いた視覚的なダッシュボードにより、一目で状況を把握可能。
+          </li>
+        </ul>
+        <p><strong>3. 導入後の効果</strong></p>
+        <ul>
+          <li>
+            <strong>情報収集の完全無人化：</strong><br>24時間365日、設定したスケジュール（トリガー）に沿って自動実行されるため、人的リソースをゼロに。
+          </li>
+          <li>
+            <strong>リスク管理の強化：</strong><br>悪天候予報をリアルタイムで検知し通知するため、現場の安全確保や配送計画の変更など、迅速な意思決定が可能。
+          </li>
+          <li>
+            <strong>分析基盤の構築：</strong><br>過去の天候履歴が自動でデータベース化されるため、将来的な需要予測や業務改善の貴重な材料として活用可能。
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="work-modal" id="work6" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="閉じる">&times;</button>
+        <img src="images/works/school/gas-test.png" alt="GASで構築したテスト作成・採点・集計自動化システム" />
+        <h3>【GAS】テスト作成・採点・集計自動化システム</h3>
+        <p><strong>1. 現状の課題</strong></p>
+        <p>
+          ★社内試験や研修後の理解度チェックにおいて、以下のような課題が発生していませんか？
+        </p>
+        <ul>
+          <li><strong>作成・採点の膨大な工数：</strong> 毎回手作業でフォームを作り、全員分の答案を目視で採点するため、結果発表までに数日を要している。</li>
+          <li><strong>通知作業の停滞：</strong> 受験者一人ひとりに合わせた成績メールの作成・送信作業に、担当者のリソースが奪われている。</li>
+          <li><strong>分析の形骸化：</strong> データの集計が複雑なため、平均点の算出だけで精一杯になり、「どの問題の正答率が低いか」といった傾向分析まで手が回らない。</li>
+        </ul>
+        <p><strong>2. 業務効率化へのフロー</strong><br>Google Apps Script（GAS）を活用し、スプレッドシート上の「問題バンク」からテスト生成・採点・分析までをシームレスに自動化します。</p>
+        <ul>
+          <li>
+            <strong>問題バンクからのフォーム自動生成</strong><br>蓄積されたデータベースから問題をランダムまたは条件別に抽出し、Google フォームを数秒で自動作成。URL発行まで完結。
+          </li>
+          <li>
+            <strong>リアルタイム自動採点＆個別通知</strong><br>受験者が回答を送信した瞬間にGASが起動。即座に自動採点を行い、個別の成績（点数・正誤）を本人へメールで自動送信。
+          </li>
+          <li>
+            <strong>ワンクリック統計レポート生成</strong><br>全受験者のデータを自動集計。平均点や合格率だけでなく、設問ごとの正答率を可視化し、分析レポートとして自動出力。
+          </li>
+        </ul>
+        <p><strong>3. 導入後の効果</strong></p>
+        <ul>
+          <li>
+            <strong>運用コストの劇的削減：</strong><br>「作成・採点・通知」にかかっていた数十時間の作業をほぼゼロにし、担当者の負担を大幅に軽減。
+          </li>
+          <li>
+            <strong>フィードバックの迅速化：</strong><br>受験直後に結果を通知することで、学習者の記憶が新しいうちに復習を促し、教育効果を最大化。
+          </li>
+          <li>
+            <strong>属人化の解消と管理の容易化：</strong><br>直感的な管理画面（ボタン操作）により、専門知識がなくても誰でも正確かつ迅速にテスト運営が可能。
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="work-modal" id="work7" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="閉じる">&times;</button>
+        <img src="images/works/school/gas-sales.png" alt="GASで構築した売上集計・PDFレポート自動配信システム" />
+        <h3>【GAS】売上集計・PDFレポート自動配信システム</h3>
+        <p><strong>1. 現状の課題</strong></p>
+        <p>
+          ★月末・月初に集中する報告業務において、以下のような課題が発生していませんか？
+        </p>
+        <ul>
+          <li><strong>作業の重複と時間拘束：</strong> 売上データの集計、PDF化、関係者へのメール送信という一連の手作業に数時間を費やし、月末の残業が常態化している。</li>
+          <li><strong>配信ミスの不安：</strong> 宛先リストを確認しながら手動でメールを送るため、添付ファイルのミスや送信漏れといったリスクが常に付きまとう。</li>
+          <li><strong>管理の煩雑化：</strong> 作成したPDFの保存先がバラバラで、後から過去のレポートを探し出すのに手間取ってしまう。</li>
+        </ul>
+        <p><strong>2. 業務効率化へのフロー</strong><br>Google Apps Script（GAS）を活用し、スプレッドシート・Googleドライブ・Gmailを連携させ、月末の報告業務を完全自動化します。</p>
+        <ul>
+          <li>
+            <strong>既存データの自動集約・分析</strong><br>蓄積された売上データから月次サマリーを自動抽出。部門別や項目別の詳細な分析レポートを瞬時に作成。
+          </li>
+          <li>
+            <strong>PDF自動生成とドライブ保存</strong><br>集計されたレポートをワンクリック（または自動）でPDFへ変換。Googleドライブの指定フォルダへ規則正しく自動保存します。
+          </li>
+          <li>
+            <strong>一斉メール配信（PDF自動添付）</strong><br>配信先リストに基づき、生成されたPDFを添付して関係者へ一斉送信。宛先ごとに内容を最適化した配信も可能。
+          </li>
+        </ul>
+        <p><strong>3. 導入後の効果</strong></p>
+        <ul>
+          <li>
+            <strong>月末業務の完全無人化：</strong><br>トリガー（時間指定）実行により、夜間や休日に自動で処理が完了。集計から配信までの担当者工数を「ゼロ」に削減。
+          </li>
+          <li>
+            <strong>配信精度の向上とリスク排除：</strong><br>プログラムによる自動送信で、宛先間違いや添付忘れを完全に防止し、業務の信頼性を向上。
+          </li>
+          <li>
+            <strong>情報の検索性と共有スピードの向上：</strong><br>常に最新のレポートがクラウド上の決まった場所に保存されるため、チーム内での情報共有や過去データの参照がスムーズに。
+          </li>
+        </ul>
       </div>
     </div>
 

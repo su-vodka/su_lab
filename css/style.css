@@ -1102,7 +1102,7 @@ a {
 }
 
 .modal-content {
-  width: min(720px, 95vw);
+  max-width: min(90vw, 1024px);
   max-height: 90vh;
   background: #fff;
   border-radius: var(--radius);
