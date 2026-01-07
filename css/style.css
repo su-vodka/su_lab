@@ -110,6 +110,12 @@ a {
   box-shadow: 0 10px 40px rgba(16, 128, 207, 0.12);
 }
 
+.main-nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .main-nav .logo a {
   display: flex;
   align-items: center;
@@ -123,6 +129,14 @@ a {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.main-nav .logo-text {
+  display: none;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  text-transform: uppercase;
 }
 
 .main-nav ul {
@@ -161,6 +175,11 @@ a {
 
   .main-nav ul {
     display: none;
+  }
+
+  .main-nav .logo-text {
+    display: inline-flex;
+    font-size: 1.05rem;
   }
 
   .menu-btn {
