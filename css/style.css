@@ -1133,6 +1133,14 @@ a {
   overscroll-behavior: contain;
 }
 
+.modal-content img {
+  margin: 0 auto 24px;
+}
+
+.modal-image-link {
+  display: block;
+}
+
 .close-modal {
   position: fixed;
   top: clamp(16px, 3vh, 32px);
