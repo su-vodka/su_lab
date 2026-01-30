@@ -372,6 +372,13 @@
                 <p>架空の自動車販売店HPです。jQueryを使用してスライダーやハンバーガーメニューを実装しました。</p>
               </div>
             </article>
+            <article class="work-card ai-card" data-modal="work10" data-animate="right">
+              <img src="images/works/site/autobus.jpg" alt="AutoBus 自動運転バス乗車予約サイトの画面" />
+              <div class="work-body">
+                <h3>AutoBus</h3>
+                <p>スマホで気軽に座席予約ができ、運行管理機能も備えたWebアプリです。</p>
+              </div>
+            </article>
             <article class="work-card ai-card" data-modal="work11" data-animate="right">
               <img src="https://placehold.jp/ffffff/828282/240x180.png?text=sample" alt="冷蔵庫の中身を管理するアプリのイメージ" />
               <div class="work-body">
@@ -776,6 +783,34 @@
         </ul>
         <p>
           <a class="cta" href="https://su-lab.site/supplyautoservice/" target="_blank" rel="noopener">サイトを開く</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="work-modal" id="work10" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="閉じる">&times;</button>
+        <a class="modal-image-link" href="https://su-lab.site/autobus/" target="_blank" rel="noopener">
+          <img src="images/works/site/autobus.jpg" alt="AutoBus 自動運転バス乗車予約サイトのモック" />
+        </a>
+        <h3>AutoBus | 自動運転バス乗車予約サイト</h3>
+        <p><strong>概要</strong><br>自動運転バスの座席をPC/スマホから予約できるWebアプリです。<br>利用者が座席を選択して直感的に予約できるUIと、運行管理者が予約状況やバス停を管理できる機能を実装しています。<br>「自動運転という新しい技術を、誰でも安心して使えること」を意識し、操作性とデザインの両立を目指しました。<br>「Google Antigravity」のAI駆動開発により、開発開始から4日で公開することが出来ました。</p>
+        <p><strong>使用技術</strong></p>
+        <ul>
+          <li><strong>フロントエンド：</strong> HTML / CSS（Tailwind CSS） / JavaScript</li>
+          <li><strong>バックエンド：</strong> PHP (Laravel) / MySQL</li>
+        </ul>
+        <p><strong>工夫した点</strong></p>
+        <ul>
+          <li>スマートフォン利用を前提に、PC・タブレット・スマホへ対応したレスポンシブ設計。</li>
+          <li>映画館予約のように、SVGで描画した座席マップから空席を選択できるUIを実装。</li>
+          <li>自動運転に対する不安を和らげるため、ナチュラルグリーンを基調とした安心感のあるデザインを採用。</li>
+          <li>同時操作によるトラブルを防ぐため、重複予約を防止する排他制御を実装。</li>
+          <li>将来的な本格運用の際には、注意事項の表示を減らし、安心して利用できるようにしました。</li>
+          <li>一般ユーザーと管理者で役割を分け、予約管理・バス停管理ができる構成にしました。</li>
+        </ul>
+        <p>
+          <a class="cta" href="https://su-lab.site/autobus/" target="_blank" rel="noopener">サイトを開く</a>
         </p>
       </div>
     </div>
